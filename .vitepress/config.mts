@@ -1,4 +1,11 @@
 import { defineConfig } from 'vitepress'
+import type { LanguageRegistration } from 'shiki'
+import LigareGrammar from './syntaxes/ligare.tmLanguage.json'
+
+const ligareLanguage = {
+  ...LigareGrammar,
+  aliases: ['lig']
+} satisfies LanguageRegistration
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -37,5 +44,8 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ligare-lang' }
     ]
+  },
+  markdown: {
+    languages: [ligareLanguage]
   }
 })

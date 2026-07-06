@@ -14,7 +14,7 @@ hero:
       link: https://github.com/ligare-lang/ligare
 
 features:
-  - title: Everything is a constraint.
+  - title: Everything is a term.
     details: Types, proofs, and contracts are one thing.
   - title: Dependent types with zero cost.
     details: Refinements and invariants compile to nothing.

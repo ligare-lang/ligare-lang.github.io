@@ -44,9 +44,6 @@ Here is an example of a lambda expression:
 fun (a b : int) => a + b
 ```
 
-Note that lambda expressions like `\x. x` is equivalent to `fun x => x`, and it is
-deperated. For newer Ligare users, use the `fun` grammar instead.
-
 You can also define functions using the `def` keyword.
 ``` ligare
 def add (a b : int) := a + b
